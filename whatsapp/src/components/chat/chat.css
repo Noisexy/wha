@@ -1,0 +1,138 @@
+.chatRender {
+  background-color: #fafafa;
+  width: 70%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.chatRender .userChatBar {
+  position: absolute;
+  z-index: 10;
+  background-color: #fafafa;
+  -webkit-box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.4);
+  height: 7%;
+  width: 100%;
+  border-top-right-radius: 20px;
+}
+
+.chatRender .chat {
+  margin-top: 5%;
+  background-image: url(../../images/500_F_142501968_oINQzkiopON7l7NxpPB77LVUvLX95uUk.jpg);
+  width: 100%;
+  height: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+  overflow-y: auto;
+  padding: 10px;
+  border-top-right-radius: 20px;
+}
+
+.chatRender .chat .messagesContainer-receiver {
+  width: 30%;
+  background-color: #f1f1f1;
+  margin-top: 25px;
+  height: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.chatRender .chat .messagesContainer-receiver .name {
+  position: absolute;
+  top: -20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.chatRender .chat .messagesContainer-receiver .message {
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.chatRender .chat .messagesContainer-sender {
+  width: 30%;
+  background-color: #aefabe;
+  margin-top: 25px;
+  margin-left: 65%;
+  height: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.chatRender .chat .messagesContainer-sender .name {
+  position: absolute;
+  top: -20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.chatRender .chat .messagesContainer-sender .message {
+  color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.chatRender .inputTextContainer {
+  height: 7%;
+  width: 100%;
+  margin-top: 0.6%;
+  background-color: #fafafa;
+  border-bottom-right-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chatRender .inputTextContainer .inputText {
+  width: 90%;
+  height: 70%;
+  border-radius: 20px;
+  border: none;
+  padding: 12px;
+  font-size: 2rem;
+}
+
+.chatRender .inputTextContainer input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .chatRender {
+    width: 100% !important;
+  }
+  .chatRender .name {
+    top: -30% !important;
+  }
+  .chatRender .messagesContainer-receiver {
+    width: 50% !important;
+  }
+  .chatRender .messagesContainer-sender {
+    margin-left: 50% !important;
+    width: 50% !important;
+  }
+  .inputText {
+    font-size: 1rem !important;
+  }
+}
+/*# sourceMappingURL=chat.css.map */

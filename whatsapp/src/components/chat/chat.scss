@@ -1,0 +1,121 @@
+.chatRender {
+  background-color: rgb(250, 250, 250);
+  width: 70%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  .userChatBar {
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(250, 250, 250);
+    //border-bottom: solid black;
+    box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.4);
+    height: 7%;
+    width: 100%;
+    border-top-right-radius: 20px;
+  }
+  .chat {
+    margin-top: 5%;
+    background-image: url(../../images/500_F_142501968_oINQzkiopON7l7NxpPB77LVUvLX95uUk.jpg);
+    width: 100%;
+    height: 86%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    overflow-y: auto;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    .messagesContainer-receiver {
+      width: 30%;
+      background-color: rgb(241, 241, 241);
+      margin-top: 25px;
+      height: 25%;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+      position: relative;
+      .name {
+        position: absolute;
+        top: -20px;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      .message {
+        color: #000;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .messagesContainer-sender {
+      width: 30%;
+      background-color: rgb(174, 250, 190);
+      margin-top: 25px;
+      margin-left: 65%;
+      height: 25%;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+      position: relative;
+      .name {
+        position: absolute;
+        top: -20px;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      .message {
+        color: #000;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .inputTextContainer {
+    height: 7%;
+    width: 100%;
+    margin-top: 0.6%;
+
+    background-color: rgb(250, 250, 250);
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inputText {
+      width: 90%;
+      height: 70%;
+      border-radius: 20px;
+      border: none;
+      padding: 12px;
+      font-size: 2rem;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chatRender {
+    width: 100% !important;
+
+    .name {
+      top: -30% !important;
+    }
+
+    .messagesContainer-receiver {
+      width: 50% !important;
+    }
+    .messagesContainer-sender {
+      margin-left: 50% !important;
+      width: 50% !important;
+    }
+  }
+
+  .inputText {
+    font-size: 1rem !important;
+  }
+}
